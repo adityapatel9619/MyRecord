@@ -29,46 +29,53 @@ namespace dskMyStudents.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtfname = new System.Windows.Forms.TextBox();
-            this.txtmname = new System.Windows.Forms.TextBox();
+            this.tbfname = new System.Windows.Forms.TextBox();
+            this.tbmname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtlname = new System.Windows.Forms.TextBox();
+            this.tblname = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtadd1 = new System.Windows.Forms.TextBox();
-            this.txtadd2 = new System.Windows.Forms.TextBox();
-            this.txtland = new System.Windows.Forms.TextBox();
+            this.tbadd1 = new System.Windows.Forms.TextBox();
+            this.tbadd2 = new System.Windows.Forms.TextBox();
+            this.tbland = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtcity = new System.Windows.Forms.TextBox();
+            this.tbcity = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtstate = new System.Windows.Forms.TextBox();
+            this.tbstate = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.txtpin = new System.Windows.Forms.TextBox();
+            this.tbpin = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.tbdob = new System.Windows.Forms.TextBox();
+            this.tbaadhar = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.rdmale = new System.Windows.Forms.RadioButton();
             this.rdfemale = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbmother = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbfather = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.tbcontact1 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.tbcontact2 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.tbgname = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.tbgnumber = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnsubmit = new System.Windows.Forms.Button();
+            this.btnreset = new System.Windows.Forms.Button();
+            this.efname = new System.Windows.Forms.ErrorProvider(this.components);
+            this.eMname = new System.Windows.Forms.ErrorProvider(this.components);
+            this.elname = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.efname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMname)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elname)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,23 +90,24 @@ namespace dskMyStudents.Forms
             this.label1.Text = "First Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtfname
+            // tbfname
             // 
-            this.txtfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtfname.Location = new System.Drawing.Point(96, 40);
-            this.txtfname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtfname.Name = "txtfname";
-            this.txtfname.Size = new System.Drawing.Size(119, 23);
-            this.txtfname.TabIndex = 1;
+            this.tbfname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbfname.Location = new System.Drawing.Point(96, 40);
+            this.tbfname.Margin = new System.Windows.Forms.Padding(2);
+            this.tbfname.Name = "tbfname";
+            this.tbfname.Size = new System.Drawing.Size(119, 23);
+            this.tbfname.TabIndex = 1;
+            this.tbfname.TextChanged += new System.EventHandler(this.tbfname_TextChanged);
             // 
-            // txtmname
+            // tbmname
             // 
-            this.txtmname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmname.Location = new System.Drawing.Point(299, 39);
-            this.txtmname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtmname.Name = "txtmname";
-            this.txtmname.Size = new System.Drawing.Size(119, 23);
-            this.txtmname.TabIndex = 3;
+            this.tbmname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmname.Location = new System.Drawing.Point(299, 39);
+            this.tbmname.Margin = new System.Windows.Forms.Padding(2);
+            this.tbmname.Name = "tbmname";
+            this.tbmname.Size = new System.Drawing.Size(119, 23);
+            this.tbmname.TabIndex = 3;
             // 
             // label2
             // 
@@ -112,14 +120,14 @@ namespace dskMyStudents.Forms
             this.label2.TabIndex = 2;
             this.label2.Text = "Middle Name";
             // 
-            // txtlname
+            // tblname
             // 
-            this.txtlname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtlname.Location = new System.Drawing.Point(492, 39);
-            this.txtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtlname.Name = "txtlname";
-            this.txtlname.Size = new System.Drawing.Size(119, 23);
-            this.txtlname.TabIndex = 5;
+            this.tblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tblname.Location = new System.Drawing.Point(492, 39);
+            this.tblname.Margin = new System.Windows.Forms.Padding(2);
+            this.tblname.Name = "tblname";
+            this.tblname.Size = new System.Drawing.Size(119, 23);
+            this.tblname.TabIndex = 5;
             // 
             // label3
             // 
@@ -132,32 +140,32 @@ namespace dskMyStudents.Forms
             this.label3.TabIndex = 4;
             this.label3.Text = "Last Name";
             // 
-            // txtadd1
+            // tbadd1
             // 
-            this.txtadd1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd1.Location = new System.Drawing.Point(96, 112);
-            this.txtadd1.Margin = new System.Windows.Forms.Padding(2);
-            this.txtadd1.Name = "txtadd1";
-            this.txtadd1.Size = new System.Drawing.Size(119, 23);
-            this.txtadd1.TabIndex = 6;
+            this.tbadd1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbadd1.Location = new System.Drawing.Point(96, 112);
+            this.tbadd1.Margin = new System.Windows.Forms.Padding(2);
+            this.tbadd1.Name = "tbadd1";
+            this.tbadd1.Size = new System.Drawing.Size(119, 23);
+            this.tbadd1.TabIndex = 6;
             // 
-            // txtadd2
+            // tbadd2
             // 
-            this.txtadd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtadd2.Location = new System.Drawing.Point(299, 112);
-            this.txtadd2.Margin = new System.Windows.Forms.Padding(2);
-            this.txtadd2.Name = "txtadd2";
-            this.txtadd2.Size = new System.Drawing.Size(119, 23);
-            this.txtadd2.TabIndex = 7;
+            this.tbadd2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbadd2.Location = new System.Drawing.Point(299, 112);
+            this.tbadd2.Margin = new System.Windows.Forms.Padding(2);
+            this.tbadd2.Name = "tbadd2";
+            this.tbadd2.Size = new System.Drawing.Size(119, 23);
+            this.tbadd2.TabIndex = 7;
             // 
-            // txtland
+            // tbland
             // 
-            this.txtland.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtland.Location = new System.Drawing.Point(492, 111);
-            this.txtland.Margin = new System.Windows.Forms.Padding(2);
-            this.txtland.Name = "txtland";
-            this.txtland.Size = new System.Drawing.Size(119, 23);
-            this.txtland.TabIndex = 8;
+            this.tbland.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbland.Location = new System.Drawing.Point(492, 111);
+            this.tbland.Margin = new System.Windows.Forms.Padding(2);
+            this.tbland.Name = "tbland";
+            this.tbland.Size = new System.Drawing.Size(119, 23);
+            this.tbland.TabIndex = 8;
             // 
             // label4
             // 
@@ -204,14 +212,14 @@ namespace dskMyStudents.Forms
             this.label7.TabIndex = 12;
             this.label7.Text = "Student Form";
             // 
-            // txtcity
+            // tbcity
             // 
-            this.txtcity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcity.Location = new System.Drawing.Point(96, 192);
-            this.txtcity.Margin = new System.Windows.Forms.Padding(2);
-            this.txtcity.Name = "txtcity";
-            this.txtcity.Size = new System.Drawing.Size(119, 23);
-            this.txtcity.TabIndex = 13;
+            this.tbcity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbcity.Location = new System.Drawing.Point(96, 192);
+            this.tbcity.Margin = new System.Windows.Forms.Padding(2);
+            this.tbcity.Name = "tbcity";
+            this.tbcity.Size = new System.Drawing.Size(119, 23);
+            this.tbcity.TabIndex = 13;
             // 
             // label8
             // 
@@ -224,14 +232,14 @@ namespace dskMyStudents.Forms
             this.label8.TabIndex = 14;
             this.label8.Text = "City";
             // 
-            // txtstate
+            // tbstate
             // 
-            this.txtstate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtstate.Location = new System.Drawing.Point(299, 192);
-            this.txtstate.Margin = new System.Windows.Forms.Padding(2);
-            this.txtstate.Name = "txtstate";
-            this.txtstate.Size = new System.Drawing.Size(119, 23);
-            this.txtstate.TabIndex = 15;
+            this.tbstate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbstate.Location = new System.Drawing.Point(299, 192);
+            this.tbstate.Margin = new System.Windows.Forms.Padding(2);
+            this.tbstate.Name = "tbstate";
+            this.tbstate.Size = new System.Drawing.Size(119, 23);
+            this.tbstate.TabIndex = 15;
             // 
             // label9
             // 
@@ -244,14 +252,14 @@ namespace dskMyStudents.Forms
             this.label9.TabIndex = 16;
             this.label9.Text = "State";
             // 
-            // txtpin
+            // tbpin
             // 
-            this.txtpin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpin.Location = new System.Drawing.Point(492, 192);
-            this.txtpin.Margin = new System.Windows.Forms.Padding(2);
-            this.txtpin.Name = "txtpin";
-            this.txtpin.Size = new System.Drawing.Size(119, 23);
-            this.txtpin.TabIndex = 17;
+            this.tbpin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbpin.Location = new System.Drawing.Point(492, 192);
+            this.tbpin.Margin = new System.Windows.Forms.Padding(2);
+            this.tbpin.Name = "tbpin";
+            this.tbpin.Size = new System.Drawing.Size(119, 23);
+            this.tbpin.TabIndex = 17;
             // 
             // label10
             // 
@@ -264,23 +272,23 @@ namespace dskMyStudents.Forms
             this.label10.TabIndex = 18;
             this.label10.Text = "Pincode";
             // 
-            // textBox11
+            // tbdob
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(299, 263);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(119, 23);
-            this.textBox11.TabIndex = 20;
+            this.tbdob.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbdob.Location = new System.Drawing.Point(299, 263);
+            this.tbdob.Margin = new System.Windows.Forms.Padding(2);
+            this.tbdob.Name = "tbdob";
+            this.tbdob.Size = new System.Drawing.Size(119, 23);
+            this.tbdob.TabIndex = 20;
             // 
-            // textBox12
+            // tbaadhar
             // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(492, 263);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(119, 23);
-            this.textBox12.TabIndex = 21;
+            this.tbaadhar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbaadhar.Location = new System.Drawing.Point(492, 263);
+            this.tbaadhar.Margin = new System.Windows.Forms.Padding(2);
+            this.tbaadhar.Name = "tbaadhar";
+            this.tbaadhar.Size = new System.Drawing.Size(119, 23);
+            this.tbaadhar.TabIndex = 21;
             // 
             // label11
             // 
@@ -338,14 +346,14 @@ namespace dskMyStudents.Forms
             this.label13.TabIndex = 26;
             this.label13.Text = "Aadhar Number";
             // 
-            // textBox10
+            // tbmother
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(96, 340);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(119, 23);
-            this.textBox10.TabIndex = 27;
+            this.tbmother.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbmother.Location = new System.Drawing.Point(96, 340);
+            this.tbmother.Margin = new System.Windows.Forms.Padding(2);
+            this.tbmother.Name = "tbmother";
+            this.tbmother.Size = new System.Drawing.Size(119, 23);
+            this.tbmother.TabIndex = 27;
             // 
             // label14
             // 
@@ -358,14 +366,14 @@ namespace dskMyStudents.Forms
             this.label14.TabIndex = 28;
             this.label14.Text = "Mother\'s Name";
             // 
-            // textBox13
+            // tbfather
             // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(299, 339);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(119, 23);
-            this.textBox13.TabIndex = 29;
+            this.tbfather.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbfather.Location = new System.Drawing.Point(299, 339);
+            this.tbfather.Margin = new System.Windows.Forms.Padding(2);
+            this.tbfather.Name = "tbfather";
+            this.tbfather.Size = new System.Drawing.Size(119, 23);
+            this.tbfather.TabIndex = 29;
             // 
             // label15
             // 
@@ -379,14 +387,14 @@ namespace dskMyStudents.Forms
             this.label15.Text = "Father\'s Name";
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
-            // textBox14
+            // tbcontact1
             // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(492, 339);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(119, 23);
-            this.textBox14.TabIndex = 31;
+            this.tbcontact1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbcontact1.Location = new System.Drawing.Point(492, 339);
+            this.tbcontact1.Margin = new System.Windows.Forms.Padding(2);
+            this.tbcontact1.Name = "tbcontact1";
+            this.tbcontact1.Size = new System.Drawing.Size(119, 23);
+            this.tbcontact1.TabIndex = 31;
             // 
             // label16
             // 
@@ -399,14 +407,14 @@ namespace dskMyStudents.Forms
             this.label16.TabIndex = 32;
             this.label16.Text = "Contact Number 1";
             // 
-            // textBox15
+            // tbcontact2
             // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(96, 423);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(119, 23);
-            this.textBox15.TabIndex = 33;
+            this.tbcontact2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbcontact2.Location = new System.Drawing.Point(96, 423);
+            this.tbcontact2.Margin = new System.Windows.Forms.Padding(2);
+            this.tbcontact2.Name = "tbcontact2";
+            this.tbcontact2.Size = new System.Drawing.Size(119, 23);
+            this.tbcontact2.TabIndex = 33;
             // 
             // label17
             // 
@@ -419,14 +427,14 @@ namespace dskMyStudents.Forms
             this.label17.TabIndex = 34;
             this.label17.Text = "Contact Number 2";
             // 
-            // textBox16
+            // tbgname
             // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(299, 422);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(119, 23);
-            this.textBox16.TabIndex = 35;
+            this.tbgname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbgname.Location = new System.Drawing.Point(299, 422);
+            this.tbgname.Margin = new System.Windows.Forms.Padding(2);
+            this.tbgname.Name = "tbgname";
+            this.tbgname.Size = new System.Drawing.Size(119, 23);
+            this.tbgname.TabIndex = 35;
             // 
             // label18
             // 
@@ -439,14 +447,14 @@ namespace dskMyStudents.Forms
             this.label18.TabIndex = 36;
             this.label18.Text = "Guardian Name";
             // 
-            // textBox17
+            // tbgnumber
             // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(492, 421);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(119, 23);
-            this.textBox17.TabIndex = 37;
+            this.tbgnumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbgnumber.Location = new System.Drawing.Point(492, 421);
+            this.tbgnumber.Margin = new System.Windows.Forms.Padding(2);
+            this.tbgnumber.Name = "tbgnumber";
+            this.tbgnumber.Size = new System.Drawing.Size(119, 23);
+            this.tbgnumber.TabIndex = 37;
             // 
             // label19
             // 
@@ -459,27 +467,40 @@ namespace dskMyStudents.Forms
             this.label19.TabIndex = 38;
             this.label19.Text = "Guardian Number";
             // 
-            // button1
+            // btnsubmit
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(187, 490);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 32);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnsubmit.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.Location = new System.Drawing.Point(187, 490);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(126, 32);
+            this.btnsubmit.TabIndex = 39;
+            this.btnsubmit.Text = "Submit";
+            this.btnsubmit.UseVisualStyleBackColor = false;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
-            // button2
+            // btnreset
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(376, 490);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(128, 32);
-            this.button2.TabIndex = 40;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnreset.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnreset.Location = new System.Drawing.Point(376, 490);
+            this.btnreset.Name = "btnreset";
+            this.btnreset.Size = new System.Drawing.Size(128, 32);
+            this.btnreset.TabIndex = 40;
+            this.btnreset.Text = "Reset";
+            this.btnreset.UseVisualStyleBackColor = false;
+            // 
+            // efname
+            // 
+            this.efname.ContainerControl = this;
+            // 
+            // eMname
+            // 
+            this.eMname.ContainerControl = this;
+            // 
+            // elname
+            // 
+            this.elname.ContainerControl = this;
             // 
             // frmAddStudent
             // 
@@ -487,49 +508,52 @@ namespace dskMyStudents.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(712, 541);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnreset);
+            this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.tbgnumber);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.tbgname);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.tbcontact2);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.tbcontact1);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.tbfather);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.tbmother);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.rdfemale);
             this.Controls.Add(this.rdmale);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.tbaadhar);
+            this.Controls.Add(this.tbdob);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txtpin);
+            this.Controls.Add(this.tbpin);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.txtstate);
+            this.Controls.Add(this.tbstate);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtcity);
+            this.Controls.Add(this.tbcity);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtland);
-            this.Controls.Add(this.txtadd2);
-            this.Controls.Add(this.txtadd1);
-            this.Controls.Add(this.txtlname);
+            this.Controls.Add(this.tbland);
+            this.Controls.Add(this.tbadd2);
+            this.Controls.Add(this.tbadd1);
+            this.Controls.Add(this.tblname);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtmname);
+            this.Controls.Add(this.tbmname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtfname);
+            this.Controls.Add(this.tbfname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmAddStudent";
             this.Text = "Add New Student";
+            ((System.ComponentModel.ISupportInitialize)(this.efname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMname)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.elname)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,44 +562,47 @@ namespace dskMyStudents.Forms
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtfname;
-        private System.Windows.Forms.TextBox txtmname;
+        private System.Windows.Forms.TextBox tbfname;
+        private System.Windows.Forms.TextBox tbmname;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtlname;
+        private System.Windows.Forms.TextBox tblname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtadd1;
-        private System.Windows.Forms.TextBox txtadd2;
-        private System.Windows.Forms.TextBox txtland;
+        private System.Windows.Forms.TextBox tbadd1;
+        private System.Windows.Forms.TextBox tbadd2;
+        private System.Windows.Forms.TextBox tbland;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtcity;
+        private System.Windows.Forms.TextBox tbcity;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtstate;
+        private System.Windows.Forms.TextBox tbstate;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtpin;
+        private System.Windows.Forms.TextBox tbpin;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox tbdob;
+        private System.Windows.Forms.TextBox tbaadhar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.RadioButton rdmale;
         private System.Windows.Forms.RadioButton rdfemale;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbmother;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tbfather;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox tbcontact1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox tbcontact2;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox tbgname;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox tbgnumber;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnsubmit;
+        private System.Windows.Forms.Button btnreset;
+        private System.Windows.Forms.ErrorProvider efname;
+        private System.Windows.Forms.ErrorProvider eMname;
+        private System.Windows.Forms.ErrorProvider elname;
     }
 }
